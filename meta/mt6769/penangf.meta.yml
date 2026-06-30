@@ -1,7 +1,7 @@
 vendor: Motorola
 model: G13/G23
 codename: penangf
-chipset: mt6768
+chipset: mt6769
 
 versions:
   - id: 0
