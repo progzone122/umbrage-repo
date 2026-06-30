@@ -1,0 +1,27 @@
+vendor: Motorola
+model: G13/G23
+codename: penangf
+chipset: mt6768
+
+versions:
+  - id: 0
+    default: true
+    description: "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit."
+    files:
+      da: MT6768_USER.bin
+      # auth:
+      # preloader:
+    checksums:
+      da: 5fce44cc54451997159d3fd78564d1ddafdfda02341fedcadeee8780004258a9
+      # auth:
+      # preloader:
+  - id: 1
+    description: "Works on a locked bootloader via a flash tool. The flashing is highly limited."
+    files:
+      da: DA_PL_NO_CERT_V6.bin
+      # auth:
+      # preloader:
+    checksums:
+      da: 77ae575005f2cde1613fea88a11ed7d92f3170984c1ec566f2586ad847466992
+      # auth:
+      # preloader:

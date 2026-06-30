@@ -1,0 +1,35 @@
+{
+  "devices": {
+    "penangf": {
+      "vendor": "Motorola",
+      "model": "G13/G23",
+      "name": "Motorola G13/G23",
+      "chipset": "mt6768",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "description": "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit.",
+          "files": {
+            "da": {
+              "name": "MT6768_USER.bin",
+              "path": "/files/mt6768/MT6768_USER.bin",
+              "sha256": "5fce44cc54451997159d3fd78564d1ddafdfda02341fedcadeee8780004258a9"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "description": "Works on a locked bootloader via a flash tool. The flashing is highly limited.",
+          "files": {
+            "da": {
+              "name": "DA_PL_NO_CERT_V6.bin",
+              "path": "/files/mt6768/DA_PL_NO_CERT_V6.bin",
+              "sha256": "77ae575005f2cde1613fea88a11ed7d92f3170984c1ec566f2586ad847466992"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
