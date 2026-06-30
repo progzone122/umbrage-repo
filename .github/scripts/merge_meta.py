@@ -2,11 +2,9 @@
 """
 Merge all meta/**/*.meta.yml files into a single meta.json.
 
-For each device:
-  - codename is used as the key
-  - file paths are resolved to files/<chipset>/<filename>
-  - checksums are attached to each file entry
-  - commented-out file slots (auth, preloader) are skipped
+Output structure:
+  - vendors: codenames grouped by vendor
+  - devices: full details keyed by codename
 
 Usage:
   python merge_meta.py [--verify] [--output meta.json]
@@ -21,7 +19,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 META_GLOB = "meta/**/*.meta.yml"
-FILES_DIR = "/files"
+FILES_DIR = "files"
 
 
 def sha256(path: Path) -> str:
@@ -75,6 +73,8 @@ def resolve_files(device: dict, verify: bool = False) -> dict:
 def merge() -> dict:
     """Walk meta/ directory and merge all YAML files into one dict."""
     devices = {}
+    vendors = {}
+
     for meta_file in sorted(REPO_ROOT.glob(META_GLOB)):
         with open(meta_file, "r") as f:
             device = yaml.safe_load(f)
@@ -89,14 +89,25 @@ def merge() -> dict:
                 file=sys.stderr,
             )
 
+        vendor = device.get("vendor", "")
+        model = device.get("model", "")
+        name = f"{vendor} {model}".strip()
+        chipset = device.get("chipset", "")
+
         devices[codename] = {
-            "vendor": device.get("vendor", ""),
-            "model": device.get("model", ""),
-            "name": f"{device.get('vendor', '')} {device.get('model', '')}".strip(),
-            "chipset": device.get("chipset", ""),
+            "vendor": vendor,
+            "model": model,
+            "name": name,
+            "chipset": chipset,
             "versions": device.get("versions", []),
         }
-    return {"devices": devices}
+
+        vendors.setdefault(vendor, []).append(codename)
+
+    for v in vendors:
+        vendors[v].sort()
+
+    return {"vendors": vendors, "devices": devices}
 
 
 def main():

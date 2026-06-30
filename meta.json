@@ -1,4 +1,9 @@
 {
+  "vendors": {
+    "Motorola": [
+      "penangf"
+    ]
+  },
   "devices": {
     "penangf": {
       "vendor": "Motorola",
@@ -13,7 +18,7 @@
           "files": {
             "da": {
               "name": "MT6768_USER.bin",
-              "path": "/files/mt6768/MT6768_USER.bin",
+              "path": "files/mt6768/MT6768_USER.bin",
               "sha256": "5fce44cc54451997159d3fd78564d1ddafdfda02341fedcadeee8780004258a9"
             }
           }
@@ -24,7 +29,7 @@
           "files": {
             "da": {
               "name": "DA_PL_NO_CERT_V6.bin",
-              "path": "/files/mt6768/DA_PL_NO_CERT_V6.bin",
+              "path": "files/mt6768/DA_PL_NO_CERT_V6.bin",
               "sha256": "77ae575005f2cde1613fea88a11ed7d92f3170984c1ec566f2586ad847466992"
             }
           }
