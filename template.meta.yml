@@ -1,27 +1,17 @@
-vendor: Motorola
-model: G13/G23
-codename: penangf
-chipset: mt6769
+vendor: <Enter vendor>
+model: <Enter model>
+codename: <Enter codename>
+chipset: <mt****>
 
 versions:
   - id: 0
     default: true
-    description: "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit."
+    description: <Enter a few words about this files. Are there any restrictions? Vulnerable to the Carbonara exploit? Could it not work because of ARB?>
     files:
-      da: MT6768_USER.bin
-      # auth:
-      # preloader:
+      da: <Move your files to the "files" directory and enter ONLY the filename. For example "MT6768_USER.bin">
+      auth: <Do the same thing you did with DA. Comment it if it's not being used>
+      preloader: <Do the same thing you did with DA. Comment it if it's not being used>
     checksums:
-      da: 5fce44cc54451997159d3fd78564d1ddafdfda02341fedcadeee8780004258a9
-      # auth:
-      # preloader:
-  - id: 1
-    description: "Works on a locked bootloader via a flash tool. The flashing is highly limited."
-    files:
-      da: DA_PL_NO_CERT_V6.bin
-      # auth:
-      # preloader:
-    checksums:
-      da: 77ae575005f2cde1613fea88a11ed7d92f3170984c1ec566f2586ad847466992
-      # auth:
-      # preloader:
+      da: <Use the "sha256sum" command to calculate the hash of a file>
+      auth: <Use the "sha256sum" command to calculate the hash of a file>
+      preloader: <Use the "sha256sum" command to calculate the hash of a file>
