@@ -8,7 +8,7 @@ versions:
     default: true
     description: "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit."
     files:
-      da: MT6768_USER.bin
+      da: MT6769_USER.bin
       # auth:
       # preloader:
     checksums:

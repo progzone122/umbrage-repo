@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 jobs:
-  merge:
+  validate-and-merge:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: pip install pyyaml
 
-      - name: Merge meta YAML → meta.json
+      - name: Validate & merge meta YAML → meta.json
         run: python .github/scripts/merge_meta.py --verify --output meta.json
 
       - name: Upload meta.json as artifact

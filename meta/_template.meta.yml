@@ -1,0 +1,17 @@
+vendor: <Enter vendor>
+model: <Enter model>
+codename: <Enter codename>
+chipset: <mt****>
+
+versions:
+  - id: 0
+    default: true
+    description: <Enter a few words about this files. Are there any restrictions? Vulnerable to the Carbonara exploit? Could it not work because of ARB?>
+    files:
+      da: <Move your file to the "files" directory and enter ONLY the filename. For example "MT6769_USER.bin">
+      # auth: <Uncomment and fill if needed>
+      # preloader: <Uncomment and fill if needed>
+    checksums:
+      da: <Use "shasum -a 256 files/<filename>" to calculate the hash>
+      # auth: <Uncomment and fill if needed>
+      # preloader: <Uncomment and fill if needed>
