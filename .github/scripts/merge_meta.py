@@ -122,7 +122,6 @@ def merge() -> dict:
             "vendor": vendor,
             "model": model,
             "name": name,
-            "chipset": device.get("chipset", ""),
             "versions": device.get("versions", []),
         }
 

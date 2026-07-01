@@ -9,7 +9,6 @@
       "vendor": "Motorola",
       "model": "G13/G23",
       "name": "Motorola G13/G23",
-      "chipset": "mt6769",
       "versions": [
         {
           "id": 0,
