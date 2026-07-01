@@ -1,10 +1,30 @@
 {
   "vendors": {
     "Motorola": [
+      "fogorow",
       "penangf"
     ]
   },
   "devices": {
+    "fogorow": {
+      "vendor": "Motorola",
+      "model": "G24/G24 Power",
+      "name": "Motorola G24/G24 Power",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "description": "Vulnerable to the Carbonara exploit.",
+          "files": {
+            "da": {
+              "name": "DA_fogorow.bin",
+              "path": "files/DA_fogorow.bin",
+              "sha256": "e74dfe815aa1611895fd77850ba4ea0456fe4cd2b568940136fecdc1f0c8ae4e"
+            }
+          }
+        }
+      ]
+    },
     "penangf": {
       "vendor": "Motorola",
       "model": "G13/G23",
