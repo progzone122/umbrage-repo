@@ -1,0 +1,16 @@
+vendor: Motorola
+model: G24/G24 Power
+codename: fogorow
+
+versions:
+  - id: 0
+    default: true
+    description: "Vulnerable to the Carbonara exploit."
+    files:
+      da: DA_fogorow.bin
+      # auth:
+      # preloader:
+    checksums:
+      da: e74dfe815aa1611895fd77850ba4ea0456fe4cd2b568940136fecdc1f0c8ae4e
+      # auth:
+      # preloader:
