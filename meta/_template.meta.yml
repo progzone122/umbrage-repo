@@ -1,7 +1,6 @@
 vendor: <Enter vendor>
 model: <Enter model>
 codename: <Enter codename>
-chipset: <mt****>
 
 versions:
   - id: 0
