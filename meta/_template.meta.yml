@@ -5,6 +5,7 @@ codename: <Enter codename>
 versions:
   - id: 0
     default: true
+    name: <Short Technical Name for GUI (e.g., Carbonara Exploit / Unlocked BL / Official Signed Flashing)>
     description: <Enter a few words about this files. Are there any restrictions? Vulnerable to the Carbonara exploit? Could it not work because of ARB?>
     files:
       da: <Move your file to the "files" directory and enter ONLY the filename. For example "MT6769_USER.bin">
