@@ -14,6 +14,7 @@
         {
           "id": 0,
           "default": true,
+          "name": "Carbonara Exploit",
           "description": "Vulnerable to the Carbonara exploit.",
           "files": {
             "da": {
@@ -33,6 +34,7 @@
         {
           "id": 0,
           "default": true,
+          "name": "Carbonara Exploit or Unlocked BL",
           "description": "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit.",
           "files": {
             "da": {
@@ -44,6 +46,7 @@
         },
         {
           "id": 1,
+          "name": "Official Signed Flashing (Locked BL)",
           "description": "Works on a locked bootloader via a flash tool. The flashing is highly limited.",
           "files": {
             "da": {
