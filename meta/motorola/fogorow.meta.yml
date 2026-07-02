@@ -5,6 +5,7 @@ codename: fogorow
 versions:
   - id: 0
     default: true
+    name: "Carbonara Exploit"
     description: "Vulnerable to the Carbonara exploit."
     files:
       da: DA_fogorow.bin

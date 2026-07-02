@@ -5,6 +5,7 @@ codename: penangf
 versions:
   - id: 0
     default: true
+    name: "Carbonara Exploit or Unlocked BL"
     description: "Works with an unlocked bootloader. Vulnerable to the Carbonara exploit."
     files:
       da: MT6769_USER.bin
@@ -15,6 +16,7 @@ versions:
       # auth:
       # preloader:
   - id: 1
+    name: "Official Signed Flashing (Locked BL)"
     description: "Works on a locked bootloader via a flash tool. The flashing is highly limited."
     files:
       da: DA_PL_NO_CERT_V6.bin

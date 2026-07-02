@@ -22,6 +22,7 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 META_GLOB = "meta/**/*.meta.yml"
 FILES_DIR = "files"
+NESTING_DEPTH = 2  # meta/<vendor>/<codename>.meta.yml
 
 
 def sha256(path: Path) -> str:
@@ -31,6 +32,18 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: f.read(65536), b""):
             h.update(chunk)
     return h.hexdigest()
+
+
+def validate_structure(meta_file: Path) -> str | None:
+    """Check that a meta file is at the correct nesting depth. Returns error or None."""
+    rel = meta_file.relative_to(REPO_ROOT)
+    parts = rel.parts
+    if len(parts) != NESTING_DEPTH + 1:  # meta/<vendor>/<file>.yml
+        return (
+            f"Wrong nesting: {rel} (expected meta/<vendor>/<codename>.meta.yml, "
+            f"got {len(parts) - 2} level(s) under meta/)"
+        )
+    return None
 
 
 def validate(data: dict) -> list[str]:
@@ -46,6 +59,14 @@ def validate(data: dict) -> list[str]:
         codenames_seen.add(codename)
 
         for version in device.get("versions", []):
+            vid = version.get("id")
+            if vid is None:
+                errors.append(f"{codename}: version missing 'id'")
+                continue
+
+            if not version.get("files"):
+                errors.append(f"{codename} v{vid}: no files specified")
+
             for slot, entry in version.get("files", {}).items():
                 file_path = REPO_ROOT / entry["path"]
                 if not file_path.exists():
@@ -55,7 +76,7 @@ def validate(data: dict) -> list[str]:
                 actual_sha = sha256(file_path)
                 if entry.get("sha256") and entry["sha256"] != actual_sha:
                     checksum_mismatches.append(
-                        f"{entry['path']} (version {version['id']}, {slot}): "
+                        f"{entry['path']} (version {vid}, {slot}): "
                         f"expected {entry['sha256'][:12]}..., got {actual_sha[:12]}..."
                     )
 
@@ -94,10 +115,17 @@ def merge() -> dict:
     """Walk meta/ directory, skip templates (_*), merge YAML into one dict."""
     devices = {}
     vendors = {}
+    structure_errors: list[str] = []
 
     for meta_file in sorted(REPO_ROOT.glob(META_GLOB)):
         # Skip template files
         if meta_file.name.startswith("_"):
+            continue
+
+        # Validate nesting depth
+        err = validate_structure(meta_file)
+        if err:
+            structure_errors.append(err)
             continue
 
         with open(meta_file, "r") as f:
@@ -116,7 +144,7 @@ def merge() -> dict:
 
         vendor = device.get("vendor", "")
         model = device.get("model", "")
-        name = f"{vendor} {model}".strip()
+        name = device.get("name") or f"{vendor} {model}".strip()
 
         devices[codename] = {
             "vendor": vendor,
@@ -126,6 +154,12 @@ def merge() -> dict:
         }
 
         vendors.setdefault(vendor, []).append(codename)
+
+    if structure_errors:
+        print("STRUCTURE ERRORS:", file=sys.stderr)
+        for e in structure_errors:
+            print(f"  ✗ {e}", file=sys.stderr)
+        sys.exit(1)
 
     for v in vendors:
         vendors[v].sort()
