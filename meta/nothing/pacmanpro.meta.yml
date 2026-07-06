@@ -1,0 +1,17 @@
+vendor: Nothing
+model: Phone 2A Plus
+codename: pacmanpro
+
+versions:
+  - id: 0
+    default: true
+    name: "Fenrir Exploit"
+    description: "Includes a preloader extracted from the beta version of the NothingOS 4 firmware. Full access to the firmware on any partition using fenrir exploit."
+    files:
+      da: DA_BR_PacmanPro.bin
+      auth: auth_sv6_PacmanPro.auth
+      preloader: preloader_pacmanpro_beta.img
+    checksums:
+      da: 6faeeb393c8457d607e4d0179cecbff640c553616b2ca199774d17891e40ef3a
+      auth: 865b1eceb69cb844784e570d4685c7219fb8bef16a90d1db1b0bd2f0007cd937
+      preloader: ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17
