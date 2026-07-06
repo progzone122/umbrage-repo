@@ -5,7 +5,8 @@
       "penangf"
     ],
     "Nothing": [
-      "pacman"
+      "pacman",
+      "pacmanpro"
     ]
   },
   "devices": {
@@ -86,6 +87,36 @@
               "name": "preloader_pacman_beta.img",
               "path": "files/preloader_pacman_beta.img",
               "sha256": "e9cc1560df05ed6035a8f5d8b9fe194772cc69e4194010ac78a1f81b6f7113a2"
+            }
+          }
+        }
+      ]
+    },
+    "pacmanpro": {
+      "vendor": "Nothing",
+      "model": "Phone 2A Plus",
+      "name": "Nothing Phone 2A Plus",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Fenrir Exploit",
+          "description": "Includes a preloader extracted from the beta version of the NothingOS 4 firmware. Full access to the firmware on any partition using fenrir exploit.",
+          "files": {
+            "da": {
+              "name": "DA_BR_PacmanPro.bin",
+              "path": "files/DA_BR_PacmanPro.bin",
+              "sha256": "6faeeb393c8457d607e4d0179cecbff640c553616b2ca199774d17891e40ef3a"
+            },
+            "auth": {
+              "name": "auth_sv6_PacmanPro.auth",
+              "path": "files/auth_sv6_PacmanPro.auth",
+              "sha256": "865b1eceb69cb844784e570d4685c7219fb8bef16a90d1db1b0bd2f0007cd937"
+            },
+            "preloader": {
+              "name": "preloader_pacmanpro_beta.img",
+              "path": "files/preloader_pacmanpro_beta.img",
+              "sha256": "ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17"
             }
           }
         }
