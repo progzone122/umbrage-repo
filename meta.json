@@ -7,6 +7,9 @@
     "Nothing": [
       "pacman",
       "pacmanpro"
+    ],
+    "Tecno": [
+      "lg7n"
     ]
   },
   "devices": {
@@ -117,6 +120,31 @@
               "name": "preloader_pacmanpro_beta.img",
               "path": "files/preloader_pacmanpro_beta.img",
               "sha256": "ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17"
+            }
+          }
+        }
+      ]
+    },
+    "lg7n": {
+      "vendor": "Tecno",
+      "model": "Pova 4",
+      "name": "Tecno Pova 4",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Engineering Method for Flashing",
+          "description": "Full access. Retrieved from AMT Tool.",
+          "files": {
+            "da": {
+              "name": "MT6789_0.bin",
+              "path": "files/MT6789_0.bin",
+              "sha256": "cdd1ea53ba64af8f38f921f4fcceebab49d77afb9c9516f7e4db316b888b84e8"
+            },
+            "auth": {
+              "name": "tecno.auth",
+              "path": "files/tecno.auth",
+              "sha256": "29ecf8e115cf0984e8b363b9b7418b7d0d089cbfc44d4999f19ddded1a985f5a"
             }
           }
         }
