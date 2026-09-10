@@ -12,6 +12,6 @@ versions:
       # auth: <Uncomment and fill if needed>
       preloader: preloader_kl7_h8916.bin
     checksums:
-      da: 9092B7C0BD56B274584681BA9CAA369B8A4E91691FBA1F0EEAC4057C67E30927
+      da: 9092b7c0bd56b274584681ba9caa369b8a4e91691fba1f0eeac4057c67e30927
       # auth: <Uncomment and fill if needed>
-      preloader: B4BC01FB72489F99BB498F73AAE96F166ED7FB9B208B78EDE1AAA43002A436F9
+      preloader: b4bc01fb72489f99bb498f73aae96f166ed7fb9b208b78ede1aaa43002a436f9
