@@ -6,7 +6,7 @@ versions:
   - id: 0
     default: true
     name: Official Signed Flashing
-    description: Файлы под Helio G85 Файлы для прошивки и раскирпичивания через SP Flash Tool на Helio G85 (MT6768). Уязвим к эксплойту Carbonara. 
+    description: Files for flashing and unbricking via SP Flash Tool on Helio G85 (MT6768). Vulnerable to Carbonara exploit.
     files:
       da: DA_6765_6785_6768_6873_6885_6853.bin
       auth: auth_sv5.auth
