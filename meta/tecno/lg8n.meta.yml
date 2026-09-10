@@ -1,0 +1,17 @@
+vendor: Tecno
+model: Pova 4 Pro
+codename: lg8n
+
+versions:
+  - id: 0
+    default: true
+    name: Engineering Method for Flashing
+    description: Full access. Retrieved from AMT Tool.
+    files:
+      da: MT6789_0.bin
+      auth: tecno.auth
+      # preloader: <Uncomment and fill if needed>
+    checksums:
+      da: cdd1ea53ba64af8f38f921f4fcceebab49d77afb9c9516f7e4db316b888b84e8
+      auth: 29ecf8e115cf0984e8b363b9b7418b7d0d089cbfc44d4999f19ddded1a985f5a
+      # preloader: <Uncomment and fill if needed>
