@@ -12,7 +12,6 @@ versions:
       auth: auth_sv5.auth
       preloader: preloader_merlin--V12.5.4.0.RJOMIXM.bin
     checksums:
-checksums:
       da: 7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9
       auth: a9554c80c2e756c5a6a444c8d276a887da8c85e4a34c0d89fbe75fab38dd03f4
       preloader: 21f76e72b3ffeb52f0403b64dcb7df03d9fbe24964511e59a3ba5a6351f08d01
