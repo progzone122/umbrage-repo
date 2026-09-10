@@ -1,0 +1,17 @@
+vendor: Tecno
+model: Spark 30 pro
+codename: KL7
+
+versions:
+  - id: 0
+    default: true
+    name: Unlocked BL
+    description: Unlocked BL
+    files:
+      da: DA_BR_MT6789_transsion.bin
+      # auth: <Uncomment and fill if needed>
+      preloader: preloader_kl7_h8916.bin
+    checksums:
+      da: 9092b7c0bd56b274584681ba9caa369b8a4e91691fba1f0eeac4057c67e30927
+      # auth: <Uncomment and fill if needed>
+      preloader: b4bc01fb72489f99bb498f73aae96f166ed7fb9b208b78ede1aaa43002a436f9
