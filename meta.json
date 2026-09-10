@@ -10,6 +10,7 @@
       "pacmanpro"
     ],
     "Tecno": [
+      "KL7",
       "lg7n",
       "lg8n"
     ],
@@ -158,6 +159,31 @@
               "name": "preloader_pacmanpro_beta.img",
               "path": "files/preloader_pacmanpro_beta.img",
               "sha256": "ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17"
+            }
+          }
+        }
+      ]
+    },
+    "KL7": {
+      "vendor": "Tecno",
+      "model": "Spark 30 pro",
+      "name": "Tecno Spark 30 pro",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Unlocked BL",
+          "description": "Unlocked BL",
+          "files": {
+            "da": {
+              "name": "DA_BR_MT6789_transsion.bin",
+              "path": "files/DA_BR_MT6789_transsion.bin",
+              "sha256": "9092b7c0bd56b274584681ba9caa369b8a4e91691fba1f0eeac4057c67e30927"
+            },
+            "preloader": {
+              "name": "preloader_kl7_h8916.bin",
+              "path": "files/preloader_kl7_h8916.bin",
+              "sha256": "b4bc01fb72489f99bb498f73aae96f166ed7fb9b208b78ede1aaa43002a436f9"
             }
           }
         }
