@@ -2,6 +2,7 @@
   "vendors": {
     "Motorola": [
       "fogorow",
+      "lamuc",
       "penangf"
     ],
     "Nothing": [
@@ -32,6 +33,39 @@
               "name": "DA_fogorow.bin",
               "path": "files/DA_fogorow.bin",
               "sha256": "e74dfe815aa1611895fd77850ba4ea0456fe4cd2b568940136fecdc1f0c8ae4e"
+            }
+          }
+        }
+      ]
+    },
+    "lamuc": {
+      "vendor": "Motorola",
+      "model": "G17/G17 Power",
+      "name": "Motorola G17/G17 Power",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Engineering Method for Flashing",
+          "description": "Full access. Works with Penumbra.",
+          "files": {
+            "da": {
+              "name": "DA_A15_lamuc_FORBID_SIGNED.bin",
+              "path": "files/DA_A15_lamuc_FORBID_SIGNED.bin",
+              "sha256": "37063f5d5e7c6fd7da22dfaffb473333052553e10de320fe0a9a5e37b3b1cb74"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "default": true,
+          "name": "Alternative Method",
+          "description": "G15/G15 Power flashing method",
+          "files": {
+            "da": {
+              "name": "DA_A15_lamu_v1.bin",
+              "path": "files/DA_A15_lamu_v1.bin",
+              "sha256": "9c1d1c881551d3d08cdf4aa14b74eaf209fbe81307f0b42b6086f46e995a6e8e"
             }
           }
         }
