@@ -1,0 +1,22 @@
+vendor: Motorola
+model: G17/G17 Power
+codename: lamuc
+
+versions:
+  - id: 0
+    default: true
+    name: "Engineering Method for Flashing"
+    description: "Full access. Works with Penumbra."
+    files:
+      da: DA_A15_lamuc_FORBID_SIGNED.bin
+    checksums:
+      da: 37063f5d5e7c6fd7da22dfaffb473333052553e10de320fe0a9a5e37b3b1cb74
+
+  - id: 1
+    default: true
+    name: "Alternative Method"
+    description: "G15/G15 Power flashing method"
+    files:
+      da: DA_A15_lamu_v1.bin
+    checksums:
+      da: 9c1d1c881551d3d08cdf4aa14b74eaf209fbe81307f0b42b6086f46e995a6e8e      
