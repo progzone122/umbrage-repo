@@ -15,6 +15,7 @@
       "lg8n"
     ],
     "Xiaomi": [
+      "lancelot",
       "merlin"
     ]
   },
@@ -234,6 +235,59 @@
               "name": "tecno.auth",
               "path": "files/tecno.auth",
               "sha256": "29ecf8e115cf0984e8b363b9b7418b7d0d089cbfc44d4999f19ddded1a985f5a"
+            }
+          }
+        }
+      ]
+    },
+    "lancelot": {
+      "vendor": "Xiaomi",
+      "model": "Redmi 9",
+      "name": "Xiaomi Redmi 9",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Official Signed Flashing",
+          "description": "Files for flashing via SP Flash Tool on Helio G80.",
+          "files": {
+            "da": {
+              "name": "DA_6765_6785_6768_6873_6885_6853.bin",
+              "path": "files/DA_6765_6785_6768_6873_6885_6853.bin",
+              "sha256": "7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9"
+            },
+            "auth": {
+              "name": "auth_lancelot.auth",
+              "path": "files/auth_lancelot.auth",
+              "sha256": "f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34"
+            },
+            "preloader": {
+              "name": "preloader_lancelot.bin",
+              "path": "files/preloader_lancelot.bin",
+              "sha256": "78c8f814a134b17d1b0123c072ee31fd3e57fa26eb1762ee4f0971693cd32b6a"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "default": false,
+          "name": "Official Engineering Flashing",
+          "description": "Files for unbricking via SP Flash Tool on Helio G80.",
+          "files": {
+            "da": {
+              "name": "DA_6765_6785_6768_6873_6885_6853.bin",
+              "path": "files/DA_6765_6785_6768_6873_6885_6853.bin",
+              "sha256": "7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9"
+            },
+            "auth": {
+              "name": "auth_lancelot.auth",
+              "path": "files/auth_lancelot.auth",
+              "sha256": "f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34"
+            },
+            "preloader": {
+              "name": "preloader_lancelot_engineering.bin",
+              "path": "files/preloader_lancelot_engineering.bin",
+              "sha256": "c35184c0db0615cb9245e3e21cb91cd0b5d3b112774a968860e93c40928f5c68"
             }
           }
         }
