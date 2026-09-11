@@ -1,0 +1,29 @@
+vendor: Xiaomi
+model: Redmi 9
+codename: lancelot
+
+versions:
+  - id: 0
+    default: true
+    name: Official Signed Flashing
+    description: Files for flashing via SP Flash Tool on Helio G80.
+    files:
+      da: DA_6765_6785_6768_6873_6885_6853.bin
+      auth: auth_lancelot.auth
+      preloader: preloader_lancelot.bin
+    checksums:
+      da: 7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9
+      auth: f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34
+      preloader: 78c8f814a134b17d1b0123c072ee31fd3e57fa26eb1762ee4f0971693cd32b6a
+  - id: 1
+    default: false
+    name: Official Engineering Flashing
+    description: Files for unbricking via SP Flash Tool on Helio G80.
+    files:
+      da: DA_6765_6785_6768_6873_6885_6853.bin
+      auth: auth_lancelot.auth
+      preloader: preloader_lancelot_engineering.bin
+    checksums:
+      da: 7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9
+      auth: f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34
+      preloader: c35184c0db0615cb9245e3e21cb91cd0b5d3b112774a968860e93c40928f5c68
