@@ -1,5 +1,8 @@
 {
   "vendors": {
+    "Lenovo": [
+      "lvp9"
+    ],
     "Motorola": [
       "fogorow",
       "lamuc",
@@ -20,6 +23,31 @@
     ]
   },
   "devices": {
+    "lvp9": {
+      "vendor": "Lenovo",
+      "model": "IdeaTab A7600-H",
+      "name": "Lenovo IdeaTab A7600-H",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Official Signed Flashing",
+          "description": "Includes a preloader and DA files, found in official device firmware package.",
+          "files": {
+            "da": {
+              "name": "MTK_AllInOne_DA.bin",
+              "path": "files/MTK_AllInOne_DA.bin",
+              "sha256": "6aa3e9796f27bf2ac7a15c217e3de0f87b301f10d32cb1cf7c9094c3dd44d218"
+            },
+            "preloader": {
+              "name": "preloader_lvp9_row_3gdatasms.bin",
+              "path": "files/preloader_lvp9_row_3gdatasms.bin",
+              "sha256": "60f6f98238dfa794146d10908c5a28c28bf4690fabfa234e22221d2d61a4a330"
+            }
+          }
+        }
+      ]
+    },
     "fogorow": {
       "vendor": "Motorola",
       "model": "G24/G24 Power",
