@@ -12,6 +12,9 @@
       "pacman",
       "pacmanpro"
     ],
+    "Realme": [
+      "doki"
+    ],
     "Tecno": [
       "KL7",
       "lg7n",
@@ -188,6 +191,31 @@
               "name": "preloader_pacmanpro_beta.img",
               "path": "files/preloader_pacmanpro_beta.img",
               "sha256": "ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17"
+            }
+          }
+        }
+      ]
+    },
+    "doki": {
+      "vendor": "Realme",
+      "model": "10/10 4G",
+      "name": "Realme 10/10 4G",
+      "versions": [
+        {
+          "id": 0,
+          "default": false,
+          "name": "Carbonara Exploit",
+          "description": "Vulnerable to the Carbonara exploit. Not all partitions are displayed without manual mode.",
+          "files": {
+            "da": {
+              "name": "MT6789_REALME.bin",
+              "path": "files/MT6789_REALME.bin",
+              "sha256": "024d01b80a0ef2e50d4dae83ca90f3594c9879586163421d0f2fcb7bd6abb811"
+            },
+            "auth": {
+              "name": "REALME_MT6789.auth",
+              "path": "files/REALME_MT6789.auth",
+              "sha256": "e88f3f8cfa1dc79e0765d809dc186414c2ffb502f224bc4e76f1a0dd5ec66397"
             }
           }
         }
