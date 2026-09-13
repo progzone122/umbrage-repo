@@ -5,6 +5,17 @@ codename: lg8n
 versions:
   - id: 0
     default: true
+    name: Carbonara exploit
+    description: Tested. It works.
+    files:
+      da: DA_BR_patched.bin
+      auth: tecno.auth
+    checksums:
+      da: 9e14857ec40a4e94808d068c9652b428615fbd9043e047de23d1664504587fec
+      auth: 29ecf8e115cf0984e8b363b9b7418b7d0d089cbfc44d4999f19ddded1a985f5a
+        
+  - id: 1
+    default: false
     name: Engineering Method for Flashing
     description: Full access. Retrieved from AMT Tool.
     files:
