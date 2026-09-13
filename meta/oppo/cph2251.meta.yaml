@@ -1,0 +1,15 @@
+vendor: OPPO
+model: Reno 6 5G
+codename: cph2251
+
+versions:
+  - id: 0
+    default: true
+    name: Carbonara exploit
+    description: Vulnerable to the Carbonara exploit.
+    files:
+      da: DA_BR_MT6877.bin
+      preloader: oppo_mt6877_prldr.bin
+    checksums:
+      da: 0f88ed6f7359bc0d4b3185eac0ba5509e664ea3260e642dd630170fdb35389c8
+      preloader: e53bef7b73bd5608a9b0dfc69018b6ed7c56d7606baf5887d726ef5fe05565e0
