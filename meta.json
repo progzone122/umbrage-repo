@@ -12,6 +12,9 @@
       "pacman",
       "pacmanpro"
     ],
+    "OPPO": [
+      "cph2251"
+    ],
     "Realme": [
       "doki"
     ],
@@ -191,6 +194,31 @@
               "name": "preloader_pacmanpro_beta.img",
               "path": "files/preloader_pacmanpro_beta.img",
               "sha256": "ac2a5850382d68ea93ad9e322083947438bb08a3f8bc9ae774fb374028282d17"
+            }
+          }
+        }
+      ]
+    },
+    "cph2251": {
+      "vendor": "OPPO",
+      "model": "Reno 6 5G",
+      "name": "OPPO Reno 6 5G",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Carbonara exploit",
+          "description": "Vulnerable to the Carbonara exploit.",
+          "files": {
+            "da": {
+              "name": "DA_BR_MT6877.bin",
+              "path": "files/DA_BR_MT6877.bin",
+              "sha256": "0f88ed6f7359bc0d4b3185eac0ba5509e664ea3260e642dd630170fdb35389c8"
+            },
+            "preloader": {
+              "name": "oppo_mt6877_prldr.bin",
+              "path": "files/oppo_mt6877_prldr.bin",
+              "sha256": "e53bef7b73bd5608a9b0dfc69018b6ed7c56d7606baf5887d726ef5fe05565e0"
             }
           }
         }
