@@ -1,0 +1,14 @@
+vendor: Infinix
+model: Note 30
+codename: x6833b
+
+versions:
+  - id: 0
+    default: true
+    name: Engineering Flashing
+    description: Full access. DA from 4PDA
+    files:
+      da: DA_BR_MT6789_transsion.bin
+      
+    checksums:
+      da: 9092b7c0bd56b274584681ba9caa369b8a4e91691fba1f0eeac4057c67e30927
