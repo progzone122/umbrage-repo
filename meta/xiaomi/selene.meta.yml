@@ -1,0 +1,17 @@
+vendor: Xiaomi
+model: Redmi 10
+codename: selene
+
+versions:
+  - id: 0
+    default: true
+    name: Official Signed Flashing
+    description: Files from latest global stock ROM(MIUI V14.0.7.0.TKUMIXM).
+    files:
+      da: DA_6765_6785_6768_6873_6885_6853.bin
+      auth: auth_selene.auth
+      preloader: preloader_selene.bin
+    checksums:
+      da: 7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9
+      auth: f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34
+      preloader: 863cd16b3525864d9210db179c47b086f62136f501024ab00f805f87b63085dd
