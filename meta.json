@@ -28,7 +28,8 @@
     ],
     "Xiaomi": [
       "lancelot",
-      "merlin"
+      "merlin",
+      "selene"
     ]
   },
   "devices": {
@@ -443,6 +444,36 @@
               "name": "preloader_merlin--V12.5.4.0.RJOMIXM.bin",
               "path": "files/preloader_merlin--V12.5.4.0.RJOMIXM.bin",
               "sha256": "21f76e72b3ffeb52f0403b64dcb7df03d9fbe24964511e59a3ba5a6351f08d01"
+            }
+          }
+        }
+      ]
+    },
+    "selene": {
+      "vendor": "Xiaomi",
+      "model": "Redmi 10",
+      "name": "Xiaomi Redmi 10",
+      "versions": [
+        {
+          "id": 0,
+          "default": true,
+          "name": "Official Signed Flashing",
+          "description": "Files from latest global stock ROM(MIUI V14.0.7.0.TKUMIXM).",
+          "files": {
+            "da": {
+              "name": "DA_6765_6785_6768_6873_6885_6853.bin",
+              "path": "files/DA_6765_6785_6768_6873_6885_6853.bin",
+              "sha256": "7404e6f1930b09f19a8afce94d7226dc9d13e392249fc68848ab56d3afd30ca9"
+            },
+            "auth": {
+              "name": "auth_selene.auth",
+              "path": "files/auth_selene.auth",
+              "sha256": "f75f4387b279e27271cbf9c038837dd73620c75870bcf76bb56c1fc51f1f6c34"
+            },
+            "preloader": {
+              "name": "preloader_selene.bin",
+              "path": "files/preloader_selene.bin",
+              "sha256": "863cd16b3525864d9210db179c47b086f62136f501024ab00f805f87b63085dd"
             }
           }
         }
