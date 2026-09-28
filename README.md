@@ -1,7 +1,7 @@
 # Umbrage Repository
 [English](./README.md) | [Русский](./README_ru.md)
 
-A repository of community-made templates for MediaTek devices used with the Umbrage project.
+A repository of community-made templates for MediaTek devices used with the [Umbrage](https://github.com/progzone122/umbrage) project.
 
 ## What is a template?
 In Umbrage, a template is a set of `DA`/`Auth`/`Preloader` files plus a `.yml` metafile. Tools compatible with Umbrage use it to figure out which files fit a given device.
